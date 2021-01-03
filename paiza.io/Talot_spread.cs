@@ -116,6 +116,7 @@ public class Hello{
         };
         
         // ÇPñáñ⁄
+        System.Console.WriteLine("[old]");
         System.Console.WriteLine(cards[(number / 2)] + "(" + frbk[(number % 2)] + ")");
         if(0 == (number % 2)){ // ê≥à íu
             System.Console.WriteLine(means_fr[(number / 2)]);
@@ -125,6 +126,7 @@ public class Hello{
         }
         System.Console.WriteLine();
         // ÇQñáñ⁄
+        System.Console.WriteLine("[now]");
         System.Console.WriteLine(cards[(number2 / 2)] + "(" + frbk[(number2 % 2)] + ")");
         if(0 == (number2 % 2)){ // ê≥à íu
             System.Console.WriteLine(means_fr[(number2 / 2)]);
@@ -134,6 +136,7 @@ public class Hello{
         }
         System.Console.WriteLine();
         // ÇRñáñ⁄
+        System.Console.WriteLine("[future]");
         System.Console.WriteLine(cards[(number3 / 2)] + "(" + frbk[(number3 % 2)] + ")");
         if(0 == (number3 % 2)){ // ê≥à íu
             System.Console.WriteLine(means_fr[(number3 / 2)]);
