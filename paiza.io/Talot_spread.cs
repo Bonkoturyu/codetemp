@@ -6,6 +6,33 @@ public class Hello{
         var rand = new System.Random();
         int number = rand.Next(1, 22*2) - 1;
         //System.Console.WriteLine("num:" + number);
+        int number2 = rand.Next(1, 22*2) - 1;
+        while(true){
+            if(number != number2){
+                if((number - (number % 2)) != number2){
+                    break;
+                }
+            }
+            number2 = rand.Next(1, 22*2) - 1;
+        }
+
+        int number3 = rand.Next(1, 22*2) - 1;
+        while(true){
+            if(number != number3){
+                if((number - (number % 2)) != number3){
+                    break;
+                }
+            }
+            number3 = rand.Next(1, 22*2) - 1;
+        }
+        while(true){
+            if(number2 != number3){
+                if((number2 - (number2 % 2)) != number3){
+                    break;
+                }
+            }
+            number3 = rand.Next(1, 22*2) - 1;
+        }
         
         // ƒJ[ƒhˆê——
         string[] cards = { 
@@ -88,12 +115,31 @@ public class Hello{
         "‘Ä«BŒÅ’èBŠæ–ÀB‰i‘±B"
         };
         
+        // ‚P–‡–Ú
         System.Console.WriteLine(cards[(number / 2)] + "(" + frbk[(number % 2)] + ")");
         if(0 == (number % 2)){ // ³ˆÊ’u
             System.Console.WriteLine(means_fr[(number / 2)]);
         }
         else{ // ‹tˆÊ’u
             System.Console.WriteLine(means_bk[(number / 2)]);
+        }
+        System.Console.WriteLine();
+        // ‚Q–‡–Ú
+        System.Console.WriteLine(cards[(number2 / 2)] + "(" + frbk[(number2 % 2)] + ")");
+        if(0 == (number2 % 2)){ // ³ˆÊ’u
+            System.Console.WriteLine(means_fr[(number2 / 2)]);
+        }
+        else{ // ‹tˆÊ’u
+            System.Console.WriteLine(means_bk[(number2 / 2)]);
+        }
+        System.Console.WriteLine();
+        // ‚R–‡–Ú
+        System.Console.WriteLine(cards[(number3 / 2)] + "(" + frbk[(number3 % 2)] + ")");
+        if(0 == (number3 % 2)){ // ³ˆÊ’u
+            System.Console.WriteLine(means_fr[(number3 / 2)]);
+        }
+        else{ // ‹tˆÊ’u
+            System.Console.WriteLine(means_bk[(number3 / 2)]);
         }
     }
 }
